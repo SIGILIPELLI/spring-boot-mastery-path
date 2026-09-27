@@ -1,0 +1,109 @@
+site_name: Spring Boot Mastery Path
+site_description: A structured, module-wise Spring Boot program for Java developers — REST APIs, Spring Data JPA, security, testing, messaging, observability, and production services.
+site_url: https://sigilipelli.github.io/spring-boot-mastery-path/
+repo_url: https://github.com/sigilipelli/spring-boot-mastery-path
+repo_name: spring-boot-mastery-path
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/progress-tracker.css
+
+extra_javascript:
+  - javascripts/progress-tracker.js
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - License: license.md
+  - "Level 1 · Entry":
+      - Overview: level-1/index.md
+      - "01 · What Spring and Spring Boot Actually Are": level-1/01-what-is-spring-boot.md
+      - "02 · Spring Initializr & Project Structure": level-1/02-initializr-project-structure.md
+      - "03 · Dependency Injection & the IoC Container": level-1/03-dependency-injection-ioc.md
+      - "04 · Beans, Scopes & Component Scanning": level-1/04-beans-component-scanning.md
+      - "05 · Configuration: application.yml, Profiles & @ConfigurationProperties": level-1/05-configuration-profiles.md
+      - "06 · Building REST Controllers": level-1/06-rest-controllers.md
+      - "07 · Request Binding, Responses & Validation": level-1/07-request-response-validation.md
+      - "08 · Exception Handling with @ControllerAdvice & ProblemDetail": level-1/08-exception-handling.md
+      - "09 · Logging with SLF4J & Logback": level-1/09-logging.md
+      - "10 · Project — A Task Tracker REST API": level-1/10-project-task-api.md
+  - "Level 2 · Intermediate":
+      - Overview: level-2/index.md
+      - "01 · Spring Data JPA & Hibernate Basics": level-2/01-spring-data-jpa-basics.md
+      - "02 · Entities & Relationships": level-2/02-entities-relationships.md
+      - "03 · Repositories, Derived Queries & @Query": level-2/03-repositories-queries.md
+      - "04 · Transactions with @Transactional": level-2/04-transactions.md
+      - "05 · Database Migrations with Flyway": level-2/05-flyway-migrations.md
+      - "06 · Testing: JUnit 5, Slices & Testcontainers": level-2/06-testing.md
+      - "07 · Spring Security Fundamentals": level-2/07-spring-security-basics.md
+      - "08 · JWT & the OAuth2 Resource Server": level-2/08-jwt-resource-server.md
+      - "09 · API Documentation with springdoc-openapi": level-2/09-openapi-springdoc.md
+      - "10 · Project — A Secured Library API with a Database": level-2/10-project-secured-library-api.md
+  - "Level 3 · Advanced":
+      - Overview: level-3/index.md
+      - "01 · How Auto-Configuration Really Works": level-3/01-auto-configuration-internals.md
+      - "02 · AOP & Proxies": level-3/02-aop-proxies.md
+      - "03 · The N+1 Problem & Fetch Strategies": level-3/03-n-plus-one-fetching.md
+      - "04 · Caching with Spring Cache": level-3/04-caching.md
+      - "05 · Async Execution & Scheduling": level-3/05-async-scheduling.md
+      - "06 · Messaging with Apache Kafka": level-3/06-messaging-kafka.md
+      - "07 · HTTP Clients & Resilience": level-3/07-http-clients-resilience.md
+      - "08 · Actuator, Health & Metrics": level-3/08-actuator-metrics.md
+      - "09 · Bean Lifecycle & Application Events": level-3/09-bean-lifecycle-events.md
+      - "10 · Project — An Event-Driven Order Service": level-3/10-project-order-service.md
+  - "Level 4 · Master":
+      - Overview: level-4/index.md
+      - "01 · Microservices & Spring Cloud": level-4/01-spring-cloud-microservices.md
+      - "02 · WebFlux vs Virtual Threads": level-4/02-webflux-vs-virtual-threads.md
+      - "03 · Performance Tuning": level-4/03-performance-tuning.md
+      - "04 · GraalVM Native Images": level-4/04-graalvm-native.md
+      - "05 · Containerizing Spring Boot": level-4/05-containerization.md
+      - "06 · Observability: Logs, Metrics & Tracing": level-4/06-observability-tracing.md
+      - "07 · Security Hardening": level-4/07-security-hardening.md
+      - "08 · Deploying to Production": level-4/08-deployment.md
+      - "09 · Architecture: Modular Monoliths & Boundaries": level-4/09-modular-architecture.md
+      - "10 · Capstone — A Production-Ready Service": level-4/10-capstone.md
