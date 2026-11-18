@@ -31,7 +31,7 @@ those surprises become predictable.
 
 - Level 1 completed, especially configuration, validation, and exception handling.
 - Basic SQL: `SELECT` with joins, primary and foreign keys, indexes. The
-  [SQL Mastery Path](https://sigilipelli.github.io/sql-mastery-path/) covers this.
+  [SQL Mastery Path](https://learnmasterypath.com/sql-mastery-path/) covers this.
 - Optional but recommended: Docker, for running PostgreSQL locally and for Testcontainers.
   Lessons use the in-memory H2 database where possible so everything also runs without
   Docker, and say so explicitly when something needs a real database.

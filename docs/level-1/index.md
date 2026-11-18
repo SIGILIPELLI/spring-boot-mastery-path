@@ -29,7 +29,7 @@ MVC and the container, not from Hibernate.
 ## What you need before starting
 
 - Solid Java: classes and interfaces, generics, lambdas and streams, records, exceptions.
-  The [Java Mastery Path](https://sigilipelli.github.io/java-mastery-path/) covers these.
+  The [Java Mastery Path](https://learnmasterypath.com/java-mastery-path/) covers these.
 - A JDK 17 or newer (21 or 25 recommended). Check with `java -version`.
 - Basic Maven familiarity is helpful but not required — every project uses the Maven
   wrapper (`./mvnw`), so you do not need Maven installed separately.

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sigilipelli.github.io/spring-boot-mastery-path/sitemap.xml
+Sitemap: https://learnmasterypath.com/spring-boot-mastery-path/sitemap.xml
