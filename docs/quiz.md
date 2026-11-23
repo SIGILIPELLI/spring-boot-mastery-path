@@ -21,7 +21,7 @@ you can retake it as many times as you like. Your best result is saved in this b
       "[]\n[]"
     ],
     "correctIndex": 0,
-    "explanation": "Spring runs equivalent checks from @NotBlank, @Min and @Email when a parameter is @Valid and answers 400 on violations. (Plain-Java model; Spring itself was not run here.) Verified by compiling and running it."
+    "explanation": "Spring runs equivalent checks from @NotBlank, @Min and @Email when a parameter is @Valid and answers 400 on violations. (Plain-Java model; Spring itself was not used.) The code was compiled, run and its output checked."
   },
   {
     "question": "What does this idempotent-handler model print when the same event is delivered twice?\n```java\nimport java.util.*;\npublic class Main { static Set<String> seen = new HashSet<>(); static int total = 0; static void handle(String id, int amt) { if (!seen.add(id)) { System.out.println(\"duplicate \" + id); return; } total += amt; } public static void main(String[] a) { handle(\"e1\", 10); handle(\"e2\", 5); handle(\"e1\", 10); System.out.println(total); } }\n```\n",
@@ -32,7 +32,7 @@ you can retake it as many times as you like. Your best result is saved in this b
       "duplicate e1\n15"
     ],
     "correctIndex": 3,
-    "explanation": "At-least-once delivery means handlers must tolerate duplicates, for example by recording processed IDs. (Plain-Java model; Spring itself was not run here.) Verified by compiling and running it."
+    "explanation": "At-least-once delivery means handlers must tolerate duplicates, for example by recording processed IDs. (Plain-Java model; Spring itself was not used.) The code was compiled, run and its output checked."
   },
   {
     "question": "What does this JDK dynamic-proxy model of AOP print?\n```java\nimport java.lang.reflect.*;\npublic class Main { public static void main(String[] x) { Svc t = (a, b) -> a + b; Svc p = (Svc) Proxy.newProxyInstance(Svc.class.getClassLoader(), new Class<?>[]{Svc.class}, (pr, m, args) -> { System.out.println(\"tx begin\"); try { Object r = m.invoke(t, args); System.out.println(\"tx commit\"); return r; } catch (InvocationTargetException e) { System.out.println(\"tx rollback\"); throw e.getCause(); } }); System.out.println(p.add(2, 3)); } }\ninterface Svc { int add(int a, int b); }\n```\n",
@@ -43,7 +43,7 @@ you can retake it as many times as you like. Your best result is saved in this b
       "5\ntx begin\ntx commit"
     ],
     "correctIndex": 2,
-    "explanation": "Transaction advice wraps the call: begin, invoke, commit (or rollback on an exception). (Plain-Java model; Spring itself was not run here.) Verified by compiling and running it."
+    "explanation": "Transaction advice wraps the call: begin, invoke, commit (or rollback on an exception). (Plain-Java model; Spring itself was not used.) The code was compiled, run and its output checked."
   },
   {
     "question": "How many queries does the N+1 problem issue for a list of 100 authors with lazy books?",
@@ -65,7 +65,7 @@ you can retake it as many times as you like. Your best result is saved in this b
       "48\ncalls=2"
     ],
     "correctIndex": 1,
-    "explanation": "The second lookup of 4 is served from the cache; @Cacheable does this keyed by arguments. (Plain-Java model; Spring itself was not run here.) Verified by compiling and running it."
+    "explanation": "The second lookup of 4 is served from the cache; @Cacheable does this keyed by arguments. (Plain-Java model; Spring itself was not used.) The code was compiled, run and its output checked."
   },
   {
     "question": "What is the right layer for @Transactional?",
