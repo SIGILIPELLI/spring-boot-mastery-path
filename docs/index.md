@@ -1,6 +1,6 @@
 ---
 title: "Free Spring Boot Course: REST APIs, JPA, Security, Testing & Production Services"
-description: "Free Spring Boot course — 36 lessons and 4 projects on dependency injection, REST controllers, Spring Data JPA, security, testing, Kafka, observability, and deployment."
+description: "Free Spring Boot course — 36 lessons, 3 projects and 1 capstone on dependency injection, REST controllers, Spring Data JPA, security, testing, Kafka, observability, and deployment."
 ---
 
 # Spring Boot Mastery Path
